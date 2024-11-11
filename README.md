@@ -14,9 +14,7 @@
 
 <img src="" height="20%" width="50%" alt="Disk Sanitization Steps"/>
 
-
-
-Using the EduBase-V2 board with the TM4C123GH6PM attached, we are able to create a basic Arithmetic Calcualtor with no bugs. Along with the microcontroller, the EduBase-V2 comes with an 16x2 LCD display, 4x4 Keypad, and Magnetic Buzzer along with other components. The software used is the Keil uVision5 written in C.
+We are building a fully functional arithmetic calculator capable of performing addition, subtraction, multiplication, and division with no bugs. This project uses the EduBase-V2 board featuring the TM4C123GH6PM microcontroller. The EduBase-V2 provides essential components, including a 16x2 LCD display for output, a 4x4 keypad for input, a magnetic buzzer for audio feedback, among others. All programming is done in C using the Keil uVision 5 IDE, which allows us to ensure smooth operation and bug-free calculations.
 
 <br />
 
@@ -27,4 +25,4 @@ For this project, we will be using the 4x4 keypad, Magnetic Buzzer, LED, and the
 
 <img src="https://github.com/user-attachments/assets/8b7e657d-d1db-4a17-bb4b-8b861ae9dc65" height="60%" width="100%" alt="Disk Sanitization Steps"/>
 
-This char is returned back into main 
+This char is returned back into main where we check to see 
