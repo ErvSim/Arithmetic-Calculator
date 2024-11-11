@@ -42,72 +42,71 @@ int main(void)
 		buzzerAndLed_init();
 
     while (1) 
-		{
-        key = keypad_getkey();																// call keypad_getkey function to see what char to store in variable
-
+	{
+        key = keypad_getkey();											// call keypad_getkey function to see what char to store in variable
         if (key) 
-				{
-            if (key >= '0' && key <= '9') 										// check to see if the char stored are between 0 and 9
-							{
-                if (isNum1) 																	// isNum1 is set true since this is our first number
-								{
-									num1 = num1 * 10 + (key - '0');							// num 1 code. (key - '0') is a way to change char to and int.
-									displayNumber(num1);												// displays num1
-									buzzerSound(key);														// makes buzzer sound depending on char (refer to DTMF telephone keypad)
-                } 
-								else 																					// isNum1 false meaning it is second number.
-								{
-                  num2 = num2 * 10 + (key - '0');							// num2 code
-                  displayMultipleNumbers(num1,num2,op);				// displays entire equation
-									isNum2 = true;															// Now we have a second number
-									buzzerSound(key);														// makes buzzer sound depending on char of key for num2 (refer to DTMF telephone keypad)
-                }
-            } 
+		{
+            if (key >= '0' && key <= '9') 									// check to see if the char stored are between 0 and 9
+		{
+                if (isNum1) 											// isNum1 is set true since this is our first number
+			{
+				num1 = num1 * 10 + (key - '0');							// num 1 code. (key - '0') is a way to change char to and int.
+				displayNumber(num1);								// displays num1
+				buzzerSound(key);								// makes buzzer sound depending on char (refer to DTMF telephone keypad)
+                	} 
+			else 											// isNum1 false meaning it is second number.
+			{
+                  		num2 = num2 * 10 + (key - '0');							// num2 code
+                  		displayMultipleNumbers(num1,num2,op);						// displays entire equation
+				isNum2 = true;									// Now we have a second number
+				buzzerSound(key);								// makes buzzer sound depending on char of key for num2 (refer to DTMF telephone keypad)
+                	}
+            	} 
 						// The order for A-D is based off My Dear Aunt Sally.
-						else if (key == 'A' && isNum1 == true) 															// Multiplication 													
-						{
-                op = '*';																			
-                isNum1 = false;																// puts isNum1 to false so we can now get into the else code for above
-                displayChar(op);															// displays char
-								buzzerSound(key);															// plays specific frequency depending on char
-						}
-						else if (key == 'B' && isNum1 == true) 															// division
-						{
-                op = '/';
-                isNum1 = false;
-                displayChar(op);
-								buzzerSound(key);
-						}
-						else if (key == 'C' && isNum1 == true) 															// Addition
-						{
-                op = '+';
-                isNum1 = false;
-                displayChar(op);
-								buzzerSound(key);
-						}
-						else if (key == 'D' && isNum1 == true) 															// subtraction
-						{
-                op = '-';
-                isNum1 = false;
-                displayChar(op);
-								buzzerSound(key);
+		else if (key == 'A' && isNum1 == true) 								// Multiplication 													
+		{
+                	op = '*';																			
+                	isNum1 = false;										// puts isNum1 to false so we can now get into the else code for above
+                	displayChar(op);									// displays char
+			buzzerSound(key);									// plays specific frequency depending on char
+		}
+		else if (key == 'B' && isNum1 == true) 								// division
+		{
+                	op = '/';
+                	isNum1 = false;
+                	displayChar(op);
+			buzzerSound(key);
+		}
+		else if (key == 'C' && isNum1 == true) 								// Addition
+		{
+                	op = '+';
+                	isNum1 = false;
+                	displayChar(op);
+			buzzerSound(key);
+		}
+		else if (key == 'D' && isNum1 == true) 								// subtraction
+		{
+                	op = '-';
+                	isNum1 = false;
+                	displayChar(op);
+			buzzerSound(key);
             
-						} 
-						else if (key == '#' && isNum1 == false && isNum2 == true) 		// button for equal sign. Performs claculation and resets everything
-						{
-                performCalculation(op, num1, num2);
-                num1 = 0;
-                num2 = 0;
-                isNum1 = true;
-								buzzerSound(key);
+		} 
+		else if (key == '#' && isNum1 == false && isNum2 == true) 					// button for equal sign. Performs claculation and resets everything
+		{
+                	performCalculation(op, num1, num2);
+                	num1 = 0;
+                	num2 = 0;
+                	isNum1 = true;
+			buzzerSound(key);
             } 
-						else if (key == '*')                              						// button for reseting everything back to normal
-						{
-                clearDisplay();
-                num1 = 0;
-                num2 = 0;
-                isNum1 = true;
-								buzzerSound(key);
+		else if (key == '*')                              						// button for reseting everything back to normal
+		{
+                	clearDisplay();
+                	num1 = 0;
+                	num2 = 0;
+                	isNum1 = true;
+			buzzerSound(key);
             }
         }		
     }
