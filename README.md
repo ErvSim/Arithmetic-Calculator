@@ -25,4 +25,4 @@ Using the EduBase-V2 board with the TM4C123GH6PM attached, we are able to create
 For this project, we will be using the 4x4 keypad, Magnetic Buzzer, LED, and the 16x2 LCD display. After initilizing all of the parts mentioned, we need to prepare the the 4x4 to take the input from the user. After referring to the datasheet, we were able to create a user function to return a char depending on what the user pressed on the keypad
 <br />
 
-<img src="https://github.com/user-attachments/assets/8b7e657d-d1db-4a17-bb4b-8b861ae9dc65" height="20%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/8b7e657d-d1db-4a17-bb4b-8b861ae9dc65" height="40%" width="80%" alt="Disk Sanitization Steps"/>
