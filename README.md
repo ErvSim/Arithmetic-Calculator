@@ -30,4 +30,4 @@ Examples of how to use the calculator are shown below. For instance, to perform 
 The 4x4 keypad used in this project follows the layout of a standard DTMF telephone keypad. I based the coding on this layout, where the letters A-D correspond to the operations based on the mnemonic "My Dear Aunt Sally." Specifically, 'A' represents multiplication, 'B' stands for division, 'C' for addition, and 'D' for subtraction.
 <br />
 
-<img src="[https://github.com/user-attachments/assets/76eaf4e5-1a53-4c9a-b18e-e3ba91177c6b](https://github.com/user-attachments/assets/f72d7dcf-ab85-4a50-8fc4-7bb516a95905)" height="20%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/f72d7dcf-ab85-4a50-8fc4-7bb516a95905" height="20%" width="50%" alt="Disk Sanitization Steps"/>
