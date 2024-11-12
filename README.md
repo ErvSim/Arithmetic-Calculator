@@ -1,13 +1,3 @@
-<br />
-
-<img src="" height="20%" width="50%" alt="Disk Sanitization Steps"/>
-
-
-
-
-
-
-
 We are building a fully functional arithmetic calculator capable of performing addition, subtraction, multiplication, and division with no bugs. This project uses the EduBase-V2 board featuring the TM4C123GH6PM microcontroller. The EduBase-V2 provides essential components, including a 16x2 LCD display for output, a 4x4 keypad for input, a magnetic buzzer for audio feedback, among others. All programming is done in C using the Keil uVision 5 IDE, which allows us to ensure smooth operation and bug-free calculations.
 
 <br />
