@@ -2,9 +2,7 @@
 
 <img src="" height="20%" width="50%" alt="Disk Sanitization Steps"/>
 
-<br />
 
-<img src="" height="20%" width="50%" alt="Disk Sanitization Steps"/>
 
 
 
@@ -34,3 +32,11 @@ Another example is performing the calculation 15 / 9. We would press '1', '5' â†
 <br />
 
 <img src="https://github.com/user-attachments/assets/5a1fe401-386d-42c2-b979-379e16dfcbaa" height="20%" width="50%" alt="Disk Sanitization Steps"/>
+
+During debugging, we first addressed the issue of multiple inputs when a user held down a button. We fixed this by adding a while loop to ensure that the keypad value toggled from 0 to 1 and back to 0, allowing only one input per button press. The second issue was allowing the sequence "num1, operation, num2, operation," which was incorrect. I resolved this by preventing any further operation buttons from being pressed after the first one. The final debug focused on handling division by zero errors. We created a user function to check if the operation is division and if num2 is 0, and in that case, we activated all LEDs and triggered the buzzer to play an alarm sound. An example of the division by zero error is shown below.
+
+<br />
+
+<img src="https://github.com/user-attachments/assets/742560bf-25b0-4b6f-b444-1ff400902bd1" height="20%" width="50%" alt="Disk Sanitization Steps"/>
+
+In addition, every button on the keypad is programmed to play a specific tone through the magnetic buzzer. The frequency of the high and low tones corresponds to the DTMF (Dual-tone multi-frequency) standard, providing an audible feedback for each key press.
