@@ -33,4 +33,4 @@ The 4x4 keypad used in this project follows the layout of a standard DTMF teleph
 Another example is performing the calculation 15 / 9. We would press '1', '5' → 'B' (for division) → '9' → '#'. The result is displayed as a double with up to 10 significant digits. However, If the answer is an integer, it will be shown as a whole number without any unnecessary trailing zeros.
 <br />
 
-<img src="https://github.com/user-attachments/assets/308a1201-ef35-4124-b0b4-cba87ae35bbd" height="20%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/5a1fe401-386d-42c2-b979-379e16dfcbaa" height="20%" width="50%" alt="Disk Sanitization Steps"/>
